@@ -1,0 +1,15 @@
+Source:zultron-keyring
+Section: misc
+Priority: important
+Maintainer: John Morris <repos@zultron.com>
+Bugs: mailto:repos@zultron.com
+Homepage: http://www.zultron.com
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 8)
+
+Package: zultron-keyring
+Architecture: all
+Depends: gnupg (>= 1.0.6-4), ${misc:Depends}
+Description: Zultron package repository GnuPG keyring
+ This package contains the package signing keys for the Zultron
+ package repositories.

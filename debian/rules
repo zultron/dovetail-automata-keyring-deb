@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+
+KEYSERVER=keys.gnupg.net
+KEYID=3B07D469
+
+%:
+	dh $@
+
+build: build-indep
+
+build-indep: build-indep-stamp
+build-indep-stamp:
+	dh_testdir
+	install -d -m 700 keyrings
+	GNUPGHOME=keyrings gpg  --keyring zultron-keyring.gpg \
+		--no-default-keyring --keyserver $(KEYSERVER) \
+		--recv-keys $(KEYID)
+	touch build-indep-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -rf keyrings
+	dh_clean
+
+override_dh_install:
+	dh_install keyrings/zultron-keyring.gpg usr/share/keyrings/
+
+override_dh_builddeb:
+	dh_builddeb -- -Zbzip2
