@@ -21,7 +21,7 @@ clean:
 	dh_testdir
 	dh_testroot
 	rm -rf keyrings
-	dh_clean
+	dh_clean *-stamp
 
 override_dh_install:
 	dh_install keyrings/zultron-keyring.gpg usr/share/keyrings/
