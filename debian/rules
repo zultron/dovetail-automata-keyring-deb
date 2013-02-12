@@ -8,14 +8,14 @@ KEYID=3B07D469
 
 build: build-indep
 
-build-indep: build-indep-stamp
-build-indep-stamp:
+binary-indep: binary-indep-stamp
+binary-indep-stamp:
 	dh_testdir
 	install -d -m 700 keyrings
 	GNUPGHOME=keyrings gpg  --keyring zultron-keyring.gpg \
 		--no-default-keyring --keyserver $(KEYSERVER) \
 		--recv-keys $(KEYID)
-	touch build-indep-stamp
+	touch binary-indep-stamp
 
 clean:
 	dh_testdir
