@@ -5,7 +5,7 @@ Maintainer: John Morris <repos@zultron.com>
 Bugs: mailto:repos@zultron.com
 Homepage: http://www.zultron.com
 Standards-Version: 3.9.1
-Build-Depends: debhelper (>= 8)
+Build-Depends: debhelper (>= 7)
 
 Package: zultron-keyring
 Architecture: all
