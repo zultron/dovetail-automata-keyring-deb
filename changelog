@@ -11,7 +11,7 @@ zultron-keyring (0.1-1) precise; urgency=low
     - set debhelper compatability to >= 7 for lucid builds
     - clean target fixes
 
- -- John Morris <john@zultron.com>  Mon, 11 Fed 2013 23:52:42 -0600
+ -- John Morris <john@zultron.com>  Mon, 11 Feb 2013 23:52:42 -0600
 
 zultron-keyring (0.1-0) precise; urgency=low
 
