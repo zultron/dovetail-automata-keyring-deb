@@ -5,7 +5,7 @@ set -e
 case "$1" in
     remove|purge)
 	if [ -x /usr/bin/apt-key ]; then
-	    apt-key del 3B07D469
+	    apt-key del 73571BB9
 	fi
     ;;
 

@@ -1,4 +1,4 @@
-This is the Zultron package repository GnuPG keyring.
+This is the Dovetail Automata LLC package repository GnuPG keyring.
 
 The keys in the keyrings don't fall under any copyright.  Everything
 else in the package is covered by the GNU GPL.
@@ -7,15 +7,16 @@ Debian support files copied from the debian-multimedia-keyring package
 originally Copyright (C) 2006 Michael Vogt <mvo@debian.org> 
 themselves based on the debian-keyring package maintained by James Troup 
 
-Debian support files for zultron-keyring are free software; you
-can redistribute them and/or modify them under the terms of the GNU
-General Public License as published by the Free Software Foundation;
-either version 2, or (at your option) any later version.
+Debian support files for dovetail-automata-keyring are free software;
+you can redistribute them and/or modify them under the terms of the
+GNU General Public License as published by the Free Software
+Foundation; either version 2, or (at your option) any later version.
 
-Debian support files for zultron-keyring are distributed in the
-hope that they will be useful, but WITHOUT ANY WARRANTY; without even
-the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-PURPOSE.  See the GNU General Public License for more details.
+Debian support files for dovetail-automata-keyring are distributed in
+the hope that they will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more
+details.
 
 You should have received a copy of the GNU General Public License with
 your Debian system, in /usr/share/common-licenses/GPL, or with the

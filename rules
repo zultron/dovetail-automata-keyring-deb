@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 KEYSERVER=keys.gnupg.net
-KEYID=3B07D469
+KEYID=73571BB9
 
 %:
 	dh $@
@@ -12,7 +12,7 @@ binary-indep: binary-indep-stamp
 binary-indep-stamp:
 	dh_testdir
 	install -d -m 700 keyrings
-	GNUPGHOME=keyrings gpg  --keyring zultron-keyring.gpg \
+	GNUPGHOME=keyrings gpg  --keyring dovetail-automata-keyring.gpg \
 		--no-default-keyring --keyserver $(KEYSERVER) \
 		--recv-keys $(KEYID)
 	touch binary-indep-stamp
@@ -24,7 +24,7 @@ clean:
 	dh_clean *-stamp
 
 override_dh_install:
-	dh_install keyrings/zultron-keyring.gpg usr/share/keyrings/
+	dh_install keyrings/dovetail-automata-keyring.gpg usr/share/keyrings/
 
 override_dh_builddeb:
 	dh_builddeb -- -Zbzip2

@@ -1,3 +1,10 @@
+dovetail-automata-keyring (0.1-1) unstable; urgency=low
+
+  * Rename package to dovetail-automata-keyring
+    - Reflects new repository ownership
+
+ -- John Morris <john@zultron.com>  Mon, 21 Jul 2014 10:07:04 -0500
+
 zultron-keyring (0.1-1) precise; urgency=low
 
   * Rebuild

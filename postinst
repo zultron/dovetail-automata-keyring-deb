@@ -5,7 +5,7 @@ set -e
 case "$1" in
     configure)
 	if [ -x /usr/bin/apt-key ]; then
-	    apt-key add /usr/share/keyrings/zultron-keyring.gpg
+	    apt-key add /usr/share/keyrings/dovetail-automata-keyring.gpg
 	fi
     ;;
 
