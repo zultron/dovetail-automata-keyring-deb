@@ -6,8 +6,6 @@ KEYID=73571BB9
 %:
 	dh $@
 
-build: build-indep
-
 binary-indep: binary-indep-stamp
 binary-indep-stamp:
 	dh_testdir
@@ -28,3 +26,5 @@ override_dh_install:
 
 override_dh_builddeb:
 	dh_builddeb -- -Zbzip2
+
+binary: binary-indep
