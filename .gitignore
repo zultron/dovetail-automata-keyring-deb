@@ -1,5 +1,6 @@
 /files
 /dovetail-automata-keyring*
+/keyrings/
 
 # OSC
 /.osc/

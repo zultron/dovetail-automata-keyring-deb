@@ -2,6 +2,9 @@
 
 KEYSERVER=keys.gnupg.net
 KEYID=73571BB9
+GPG_CMD = GNUPGHOME=keyrings gpg  --keyring dovetail-automata-keyring.gpg \
+	--no-default-keyring
+KEYFILE = dovetail-automata.gpg.ascii
 
 %:
 	dh $@
@@ -10,10 +13,9 @@ binary-indep: binary-indep-stamp
 binary-indep-stamp:
 	dh_testdir
 	install -d -m 700 keyrings
-	GNUPGHOME=keyrings gpg  --keyring dovetail-automata-keyring.gpg \
-		--no-default-keyring --keyserver $(KEYSERVER) \
-		--recv-keys $(KEYID)
-	touch binary-indep-stamp
+	$(GPG_CMD) \
+		--import debian/$(KEYFILE)
+	touch $@
 
 clean:
 	dh_testdir
@@ -28,3 +30,12 @@ override_dh_builddeb:
 	dh_builddeb -- -Zbzip2
 
 binary: binary-indep
+
+
+# Maintenance commands
+download_key:
+	$(GPG_CMD) \
+	    --keyserver $(KEYSERVER) \
+	    --recv-keys $(KEYID)
+	$(GPG_CMD) \
+	    --export --armor --output $(KEYFILE)
