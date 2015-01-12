@@ -1,6 +1,7 @@
 dovetail-automata-keyring (0.1-2) unstable; urgency=low
 
   * Bump release for build in OBS
+  * Add B-D: gnupg to fix FTBFS on OBS
 
  -- John Morris <john@zultron.com>  Mon, 12 Jan 2015 12:56:41 -0600
 
