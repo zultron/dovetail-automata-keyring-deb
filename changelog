@@ -1,3 +1,10 @@
+dovetail-automata-keyring (0.2) unstable; urgency=low
+
+  * Bump version
+    - Native format packages can't have release
+
+ -- John Morris <john@zultron.com>  Wed, 08 Apr 2015 23:53:38 -0500
+
 dovetail-automata-keyring (0.1-2) unstable; urgency=low
 
   * Bump release for build in OBS
